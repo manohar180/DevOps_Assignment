@@ -4,6 +4,7 @@
 
 ### Explanation
 *   **`git commit -m "message"`**: Commits only the files that have been explicitly staged to the index using `git add`. If a tracked file is modified but not staged, this command will ignore the changes.
+
 *   **`git commit -a -m "message"`**: A shortcut that tells Git to automatically stage all modified and deleted files that are *already being tracked* before committing. (Note: It does not include newly created, untracked files).
 
 ### Execution Proof
