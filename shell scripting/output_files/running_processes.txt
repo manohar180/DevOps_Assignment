@@ -1,0 +1,25 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  2.0  0.1  21736 12120 ?        Ss   12:43   0:01 /sbin/init
+root           2  0.0  0.0   3060  1664 ?        Sl   12:43   0:00 /init
+root           6  0.0  0.0   3076  1892 ?        Sl   12:43   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          55  0.5  0.2  50352 16500 ?        S<s  12:43   0:00 /usr/lib/systemd/systemd-journald
+root         104  0.6  0.0  24984  6016 ?        Ss   12:43   0:00 /usr/lib/systemd/systemd-udevd
+systemd+     126  0.4  0.1  21452 12672 ?        Ss   12:43   0:00 /usr/lib/systemd/systemd-resolved
+systemd+     146  0.2  0.0  91020  7680 ?        Ssl  12:43   0:00 /usr/lib/systemd/systemd-timesyncd
+root         190  0.0  0.0   4236  2432 ?        Ss   12:43   0:00 /usr/sbin/cron -f -P
+message+     191  0.1  0.0   9620  4736 ?        Ss   12:43   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         204  0.3  0.1  17964  8320 ?        Ss   12:43   0:00 /usr/lib/systemd/systemd-logind
+root         207  0.3  0.1 1756096 12032 ?       Ssl  12:43   0:00 /usr/libexec/wsl-pro-service -vv
+syslog       223  0.4  0.0 222508  5632 ?        Ssl  12:43   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         228  0.0  0.0   3160  1920 hvc0     Ss+  12:43   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+root         231  0.0  0.0   3116  1792 tty1     Ss+  12:43   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         248  0.5  0.2 107024 22144 ?        Ssl  12:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         347  0.0  0.0   3068   896 ?        Ss   12:43   0:00 /init
+root         348  0.0  0.0   3084  1024 ?        S    12:43   0:00 /init
+manohar      349  0.2  0.0   6072  4992 pts/0    Ss   12:43   0:00 -bash
+root         350  0.0  0.0   6688  4352 pts/1    Ss   12:43   0:00 /bin/login -f
+manohar      439  0.3  0.1  20292 11264 ?        Ss   12:43   0:00 /usr/lib/systemd/systemd --user
+manohar      440  0.0  0.0  21148  3504 ?        S    12:43   0:00 (sd-pam)
+manohar      451  0.0  0.0   6072  5248 pts/1    S+   12:43   0:00 -bash
+manohar      535  0.0  0.0   4756  3328 pts/0    S+   12:43   0:00 /bin/bash ./sys_info.sh
+manohar      551  0.0  0.0   8284  4096 pts/0    R+   12:44   0:00 ps aux
