@@ -25,7 +25,7 @@ Below are the outputs and my explanations for the essential networking commands 
 
 ![IP Output](ip_output.png)
 
-**Explanation:** This command displays all the network interfaces attached to the system and their assigned IP addresses. I understood that this is crucial for finding the local/private IP address of my machine and checking the status of my network adapters.
+**Explanation:** This command displays all the network interfaces attached to the system and their assigned IP addresses. I understood that this is crucial for finding the local/Private IP address of my machine and checking the status of my network adapters.
 
 
 ### 4. `nslookup`
