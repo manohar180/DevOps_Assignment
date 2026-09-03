@@ -1,6 +1,7 @@
 # Linux Fundamentals Assignment
 
 **Name:** Vanukuri Manohar Reddy
+
 **Course:** DevOps Fundamentals
 
 
@@ -11,6 +12,7 @@ Hey! This is my README for the Linux Fundamentals module. I went through the tas
 ## Task 1: Soft Links vs. Hard Links
 
 * **Soft Link (Symlink):** This is exactly like a "Shortcut" in Windows. It’s just a file that points to the file path of the original. If I delete the original file, the soft link breaks and becomes useless (a dangling link). It gets a brand new inode number.
+
 * **Hard Link:** This is like creating a second physical doorway to the exact same room of data on the hard drive. It shares the exact same inode number as the original file. If I delete the original file, the hard link still works perfectly because the underlying data hasn't been deleted yet.
 
 ### My Hands-on Test
@@ -51,6 +53,7 @@ If I run `rm original.txt`, the hard link will still output "Testing out Linux l
 I used to think these were the exact same thing, but they behave totally differently on Ubuntu/WSL.
 
 * **`useradd`:** This is the low-level, native command. If I just run `useradd newuser`, it barely does anything. It doesn't prompt me for a password, it doesn't create a home directory (unless I pass the `-m` flag), and it doesn't set a default shell. It's meant for background automation scripts, not real people.
+
 * **`adduser`:** This is the one we *should* be using on Ubuntu. It’s actually a Perl script that runs `useradd` in the background but adds a nice interactive wizard.
 
 ### Creating a Test User
