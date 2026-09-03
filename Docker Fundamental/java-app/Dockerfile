@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM eclipse-temurin:11
 WORKDIR /app
 COPY Main.java .
 RUN javac Main.java
