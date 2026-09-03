@@ -3,6 +3,7 @@
 
 Below are the screenshots demonstrating the successful execution of the system information script:
 
+
 **1. Running the script and providing user input in the terminal:**
 ![Script Input](script_input.png)
 
