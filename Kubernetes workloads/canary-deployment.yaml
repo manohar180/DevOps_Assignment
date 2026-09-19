@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-canary
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-canary
+      version: canary
+  template:
+    metadata:
+      labels:
+        app: nginx-canary
+        version: canary
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:1.26

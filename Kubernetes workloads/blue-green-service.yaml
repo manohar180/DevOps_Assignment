@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-blue-green
+spec:
+  selector:
+    app: nginx-blue
+    version: blue
+  ports:
+    - port: 80
+      targetPort: 80
