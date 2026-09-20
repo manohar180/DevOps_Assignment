@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yatri-backend
+  labels:
+    app: yatri-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: yatri-backend
+  template:
+    metadata:
+      labels:
+        app: yatri-backend
+    spec:
+      containers:
+        - name: backend
+          image: nginx
+          envFrom:
+            - configMapRef:
+                name: yatri-app-config
